@@ -14,4 +14,7 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
+//= require scrollreveal
+//= require jquery.easing
+//= require jquery.magnific-popup
 //= require_tree .
