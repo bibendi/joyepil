@@ -3,139 +3,138 @@
     / Brand and toggle get grouped for better mobile display
     .navbar-header
       %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Toggle navigation
-        Menu
+        %span.sr-only Навигация
+        Меню
         %i.fa.fa-bars
-      %a.navbar-brand.page-scroll{:href => "#page-top"} Start Bootstrap
+      %a.navbar-brand.page-scroll{:href => "#page-top"} Joy Epil
     / Collect the nav links, forms, and other content for toggling
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right
         %li
-          %a.page-scroll{:href => "#about"} About
+          %a.page-scroll{:href => "#about"} Что такое шугаринг
         %li
-          %a.page-scroll{:href => "#services"} Services
+          %a.page-scroll{:href => "#why"} Зачем
         %li
-          %a.page-scroll{:href => "#portfolio"} Portfolio
+          %a.page-scroll{:href => "#reviews"} Клиенты
         %li
-          %a.page-scroll{:href => "#contact"} Contact
+          %a.page-scroll{:href => "#cost"} Цены
+        %li
+          %a.page-scroll{:href => "#contact"} Контакты
     / /.navbar-collapse
   / /.container-fluid
 %header
   .header-content
     .header-content-inner
-      %h1#homeHeading Your Favorite Source of Free Bootstrap Themes
+      %h1#homeHeading Шугаринг в удовольствие!
       %hr/
-      %p Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!
-      %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out More
+      %p Студия профессиональной сахарной депиляции в Екатеринбурге
+      %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Узнать больше
+
 %section#about.bg-primary
   .container
     .row
       .col-lg-8.col-lg-offset-2.text-center
-        %h2.section-heading We've got what you need!
+        %h2.section-heading Как это работает?
         %hr.light/
-        %p.text-faded Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
-        %a.page-scroll.btn.btn-default.btn-xl.sr-button{:href => "#services"} Get Started!
-%section#services
+        %p.text-faded
+          Шугаринг – это способ эпиляции, при котором лишние волоски удаляются с помощью специальной сахарной пасты.
+        %p.text-faded
+          Нагретый до консистенции густой пасты, золотой шар мягко наносят против роста волос.
+          Быстрым движение руки, нежелательные волосы удаляются в естественном направлении роста.
+        %p.text-faded
+          По сравнению с другими методами удаления волосков у шугаринга есть ряд преимуществ:
+          он не так болезнен, как эпиляция воском, обладает долговременным эффектом (около 3 недель).
+        %a.page-scroll.btn.btn-default.btn-xl.sr-button{:href => "#why"} Зачем?
+
+%section#why
   .container
     .row
       .col-lg-12.text-center
-        %h2.section-heading At Your Service
+        %h2.section-heading Зачем девушкам шугаринг?
         %hr.primary/
   .container
     .row
       .col-lg-3.col-md-6.text-center
         .service-box
-          %i.fa.fa-4x.fa-diamond.text-primary.sr-icons
-          %h3 Sturdy Templates
-          %p.text-muted Our templates are updated regularly so they don't break.
-      .col-lg-3.col-md-6.text-center
-        .service-box
-          %i.fa.fa-4x.fa-paper-plane.text-primary.sr-icons
-          %h3 Ready to Ship
-          %p.text-muted You can use this theme as is, or you can make changes!
-      .col-lg-3.col-md-6.text-center
-        .service-box
-          %i.fa.fa-4x.fa-newspaper-o.text-primary.sr-icons
-          %h3 Up to Date
-          %p.text-muted We update dependencies to keep things fresh.
+          %i.fa.fa-4x.fa-clock-o.text-primary.sr-icons
+          %h3 Эффективно
+          %p.text-muted
+            Эффект от шугаринга держится около 2-3 недель.
+            Минимальное раздражение, которое проходит через несколько часов.
       .col-lg-3.col-md-6.text-center
         .service-box
           %i.fa.fa-4x.fa-heart.text-primary.sr-icons
-          %h3 Made with Love
-          %p.text-muted You have to make your websites with love these days!
-%section#portfolio.no-padding
-  .container-fluid
-    .row.no-gutter.popup-gallery
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "img/portfolio/fullsize/1.jpg"}
-          %img.img-responsive{:alt => "", :src => "img/portfolio/thumbnails/1.jpg"}/
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "img/portfolio/fullsize/2.jpg"}
-          %img.img-responsive{:alt => "", :src => "img/portfolio/thumbnails/2.jpg"}/
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "img/portfolio/fullsize/3.jpg"}
-          %img.img-responsive{:alt => "", :src => "img/portfolio/thumbnails/3.jpg"}/
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "img/portfolio/fullsize/4.jpg"}
-          %img.img-responsive{:alt => "", :src => "img/portfolio/thumbnails/4.jpg"}/
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "img/portfolio/fullsize/5.jpg"}
-          %img.img-responsive{:alt => "", :src => "img/portfolio/thumbnails/5.jpg"}/
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
-      .col-lg-4.col-sm-6
-        %a.portfolio-box{:href => "img/portfolio/fullsize/6.jpg"}
-          %img.img-responsive{:alt => "", :src => "img/portfolio/thumbnails/6.jpg"}/
-          .portfolio-box-caption
-            .portfolio-box-caption-content
-              .project-category.text-faded
-                Category
-              .project-name
-                Project Name
-%aside.bg-dark
+          %h3 Полезно
+          %p.text-muted
+            Действует на кожу подобно пилингу. Кожа после него мягкая и гладкая.
+      .col-lg-3.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-leaf.text-primary.sr-icons
+          %h3 Экологично
+          %p.text-muted
+            Сахарная паста состоит из воды и сахара.
+            Никакой химии как в восковой депиляции, никаких излучений как в лазерной депиляции.
+      .col-lg-3.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-rub.text-primary.sr-icons
+          %h3 Экономно
+          %p.text-muted
+            Шугаринг не дорогой в сравнении с фото и лазерной эпиляцией.
+
+- content_for(:js) do
+  = javascript_include_tag("//platform.instagram.com/en_US/embeds.js", defer: true, async: true)
+
+%section#reviews.bg-dark
   .container.text-center
-    .call-to-action
-      %h2 Free Download at Start Bootstrap!
-      %a.btn.btn-default.btn-xl.sr-button{:href => "http://startbootstrap.com/template-overviews/creative/"} Download Now!
-%section#contact
+    .row
+      .col-lg-12.text-center
+        %h2.section-heading Счастливые клиенты
+        %hr.primary/
+
   .container
     .row
+      .col-lg-4.col-lg-offset-1.text-center
+        .service-box
+          :plain
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:62.5% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BRwDgW0A97A/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Я за естественную красоту 😏 но не во всех местах естественность уместна 🙊😂 ну девочки поймут 👯Что нужно нам для счастья - радовать себя любимую, быть красивой и наболтаться от души о своем, о женском 💫💫💫 и как хорошо, когда находишь мастера-профессионала, которому можно довериться 💆 Кому сладкую депиляцию, заряд бодрости и позитива все к Даше @joy.epil #joyepil#шугарингекб#лучшиймастердаша#</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Публикация от Птицына Ольга (@ptichka_nails) <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-03-17T19:24:07+00:00">Мар 17 2017 в 12:24 PDT</time></p></div></blockquote>
+      .col-lg-6.text-center
+        .service-box
+          :plain
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BRqW_vNgoKO/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Собираю красотку Кристину туда где🌝🌊🏊🐠🌹 Отличного отдыха!😘</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Публикация от Шугаринг в удовольствие! (@joy.epil) <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-03-15T14:18:59+00:00">Мар 15 2017 в 7:18 PDT</time></p></div></blockquote>
+
+%section#cost.no-padding
+  = image_tag "price.jpg", style: "width: 100%"
+
+%section#contact
+  .container.text-center
+    .row
       .col-lg-8.col-lg-offset-2.text-center
-        %h2.section-heading Let's Get In Touch!
+        %h2.section-heading Записаться на процедуру!
         %hr.primary/
-        %p Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!
-      .col-lg-4.col-lg-offset-2.text-center
+        %p Остались вопросы? Буду рада видеть Вас в своей студии.
+        %p Екатеринбург, ул. Волгоградская 39
+        %p С уважением, ваш мастер, Дарья!
+
+  .container
+    .row
+      %hr.primary/
+
+      .col-lg-2.col-lg-offset-2.text-center
         %i.fa.fa-phone.fa-3x.sr-contact
-        %p 123-456-6789
-      .col-lg-4.text-center
+        %p
+          %a{href: "tel:+79826128802"} +7 (982) 612-88-02
+
+      .col-lg-2.text-center
+        %i.fa.fa-instagram.fa-3x.sr-contact
+        %p
+          %a{href: "https://www.instagram.com/joy.epil/"} @joy.epil
+
+      .col-lg-2.text-center
+        %i.fa.fa-vk.fa-3x.sr-contact
+        %p
+          %a{href: "https://vk.com/joyepil"} vk.com/joyepil
+
+      .col-lg-2.text-center
         %i.fa.fa-envelope-o.fa-3x.sr-contact
         %p
-          %a{:href => "mailto:your-email@your-domain.com"} feedback@startbootstrap.com
+          %a{:href => "mailto:joyepil.ru@gmail.com"} joyepil.ru@gmail.com
