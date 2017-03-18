@@ -1,0 +1,29 @@
+version: '2'
+
+services:
+  app:
+    extends:
+      file: docker-compose.common.yml
+      service: ruby
+    volumes:
+      - ..:/app
+      - bundler-data:/bundle
+
+  web:
+    extends:
+      file: docker-compose.common.yml
+      service: ruby
+    command: bundle exec rails s Puma -b 0.0.0.0 -p 80
+    expose:
+      - "80"
+    labels:
+      com.dnsdock.name: "joyepil"
+      com.dnsdock.image: ""
+    volumes:
+      - ..:/app
+      - bundler-data:/bundle
+
+volumes:
+  bundler-data:
+    external:
+      name: bundler_data
