@@ -22,5 +22,6 @@ module App
     # -- all .rb files in that directory are automatically loaded.
 
     config.yandex_metrika_id = ENV["YANDEX_METRIKA_ID"]
+    config.yandex_verification = ENV["YANDEX_VERIFICATION"]
   end
 end
