@@ -14,10 +14,13 @@
   %body#page-top
     = yield
 
-= javascript_include_tag "application"
-/ Le HTML5 shim, for IE6-8 support of HTML elements
-/[if lt IE 9]
-  = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"
+    = javascript_include_tag "application"
+    / Le HTML5 shim, for IE6-8 support of HTML elements
+    /[if lt IE 9]
+      = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"
 
-- if content_for?(:js)
-  = yield(:js)
+    - if content_for?(:js)
+      = yield(:js)
+
+    - if (yandex_metrika_id = Rails.application.config.yandex_metrika_id).present?
+      = render "layouts/counters/metrika.html.haml", yandex_metrika_id: yandex_metrika_id
