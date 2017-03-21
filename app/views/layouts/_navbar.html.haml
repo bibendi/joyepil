@@ -1,0 +1,27 @@
+:ruby
+  is_root = local_assigns.fetch(:is_root, false)
+
+%nav#mainNav.navbar.navbar-default.navbar-fixed-top
+  .container-fluid
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Навигация
+        Меню
+        %i.fa.fa-bars
+      %a.navbar-brand.page-scroll{href: is_root ? "#page-top" : root_path} Joy Epil
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a.page-scroll{href: is_root ? "#about" : root_path(anchor: "about")} Что такое шугаринг
+        %li
+          %a.page-scroll{href: is_root ? "#why" : root_path(anchor: "why")} Зачем
+        %li
+          %a.page-scroll{href: is_root ? "#reviews" : root_path(anchor: "reviews")} Клиенты
+        %li
+          %a.page-scroll{href: is_root ? "#cost" : root_path(anchor: "cost")} Цены
+        %li
+          %a.page-scroll{href: is_root ? "#contact" : root_path(anchor: "contact")} Контакты
+    / /.navbar-collapse
+  / /.container-fluid

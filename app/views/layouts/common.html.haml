@@ -1,0 +1,21 @@
+- inside_layout 'application' do
+  = render "layouts/navbar"
+
+  %aside.bg-primary
+    .container
+      .row.text-center
+        .col-lg-8.col-lg-offset-2.text-center
+          %h1= yield(:header)
+          %hr/
+
+  %aside
+    .container
+      .row
+        .col-lg-6.col-lg-offset-3.text-center
+          = bootstrap_flash
+          = yield
+
+  %section.no-padding
+    .container
+      .row
+        = render "layouts/footer_links"

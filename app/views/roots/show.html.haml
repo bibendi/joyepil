@@ -1,27 +1,8 @@
-%nav#mainNav.navbar.navbar-default.navbar-fixed-top
-  .container-fluid
-    / Brand and toggle get grouped for better mobile display
-    .navbar-header
-      %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Навигация
-        Меню
-        %i.fa.fa-bars
-      %a.navbar-brand.page-scroll{:href => "#page-top"} Joy Epil
-    / Collect the nav links, forms, and other content for toggling
-    #bs-example-navbar-collapse-1.collapse.navbar-collapse
-      %ul.nav.navbar-nav.navbar-right
-        %li
-          %a.page-scroll{:href => "#about"} Что такое шугаринг
-        %li
-          %a.page-scroll{:href => "#why"} Зачем
-        %li
-          %a.page-scroll{:href => "#reviews"} Клиенты
-        %li
-          %a.page-scroll{:href => "#cost"} Цены
-        %li
-          %a.page-scroll{:href => "#contact"} Контакты
-    / /.navbar-collapse
-  / /.container-fluid
+- content_for(:title, "Joy Epil")
+- content_for(:title_postfix, "Шугаринг в Екатеринбурге")
+
+= render "layouts/navbar", is_root: true
+
 %header
   .header-content
     .header-content-inner
@@ -119,27 +100,10 @@
         %address
           %p Екатеринбург, ул. Чкалова 256
         %p С уважением, ваш мастер, Дарья!
+        %p
+          %a.btn.btn-primary.btn-xl{href: new_appointment_url} Online запись
 
   .container
     .row
       %hr.primary/
-
-      .col-lg-2.col-lg-offset-2.text-center
-        %i.fa.fa-phone.fa-3x.sr-contact
-        %p
-          %a{href: "tel:+79826128802"} +7 (982) 612-88-02
-
-      .col-lg-2.text-center
-        %i.fa.fa-instagram.fa-3x.sr-contact
-        %p
-          %a{href: "https://www.instagram.com/joy.epil/"} @joy.epil
-
-      .col-lg-2.text-center
-        %i.fa.fa-vk.fa-3x.sr-contact
-        %p
-          %a{href: "https://vk.com/joyepil"} vk.com/joyepil
-
-      .col-lg-2.text-center
-        %i.fa.fa-envelope-o.fa-3x.sr-contact
-        %p
-          %a{:href => "mailto:joyepil.ru@gmail.com"} joyepil.ru@gmail.com
+      = render "layouts/footer_links"

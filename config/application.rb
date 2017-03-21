@@ -2,7 +2,7 @@ require_relative 'boot'
 
 require "rails"
 # Pick the frameworks you want:
-# require "active_model/railtie"
+require "active_model/railtie"
 # require "active_job/railtie"
 # require "active_record/railtie"
 require "action_controller/railtie"
@@ -24,5 +24,7 @@ module App
     config.yandex_metrika_id = ENV["YANDEX_METRIKA_ID"]
     config.yandex_verification = ENV["YANDEX_VERIFICATION"]
     config.google_verification = ENV["GOOGLE_VERIFICATION"]
+    config.noreply_email = ENV["NOREPLY_EMAIL"]
+    config.notification_email = ENV["NOTIFICATION_EMAIL"]
   end
 end

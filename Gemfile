@@ -18,6 +18,9 @@ gem "autoprefixer-rails"
 gem "turbolinks"
 gem "uglifier"
 gem "therubyracer", platforms: :ruby
+gem "interactor"
+gem "phonelib"
+gem "rails-i18n"
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -26,4 +29,11 @@ end
 group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
+end
+
+group :test do
+  gem "rails-controller-testing"
+  gem "rspec-rails"
+  gem "simplecov"
+  gem "factory_girl_rails"
 end

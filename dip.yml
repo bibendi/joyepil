@@ -8,7 +8,7 @@ environment:
 compose:
   files:
     - docker/docker-compose.${COMPOSE_FILE_EXT}.yml
-  project_name: twinkle${RAILS_ENV}
+  project_name: joyepil${RAILS_ENV}
 
 interaction:
   sh:
