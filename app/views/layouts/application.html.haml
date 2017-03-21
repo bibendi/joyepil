@@ -12,6 +12,8 @@
     = favicon_link_tag 'favicon.ico', :rel => 'shortcut icon'
     - if (yandex_verification = Rails.application.config.yandex_verification).present?
       %meta{name: "yandex-verification", content: yandex_verification}
+    - if (google_verification = Rails.application.config.google_verification).present?
+      %meta{name: "google-site-verification", content: google_verification}
 
   %body#page-top
     = yield

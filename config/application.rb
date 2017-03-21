@@ -23,5 +23,6 @@ module App
 
     config.yandex_metrika_id = ENV["YANDEX_METRIKA_ID"]
     config.yandex_verification = ENV["YANDEX_VERIFICATION"]
+    config.google_verification = ENV["GOOGLE_VERIFICATION"]
   end
 end
