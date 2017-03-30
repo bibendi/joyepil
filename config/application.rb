@@ -21,6 +21,7 @@ module App
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
+    config.host = ENV.fetch("HOST")
     config.yandex_metrika_id = ENV["YANDEX_METRIKA_ID"]
     config.yandex_verification = ENV["YANDEX_VERIFICATION"]
     config.google_verification = ENV["GOOGLE_VERIFICATION"]

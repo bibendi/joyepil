@@ -3,6 +3,6 @@ class AppointmentMailer < ApplicationMailer
     @appointment = appointment
 
     mail(to: Rails.application.config.notification_email,
-         subject: "Онлайн запись с сайта")
+         subject: "Онлайн запись с сайта #{Rails.application.config.host}")
   end
 end
