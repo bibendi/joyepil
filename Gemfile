@@ -15,7 +15,6 @@ gem "jquery-rails"
 gem "haml"
 gem "haml-rails"
 gem "autoprefixer-rails"
-gem "turbolinks"
 gem "uglifier"
 gem "therubyracer", platforms: :ruby
 gem "interactor"
