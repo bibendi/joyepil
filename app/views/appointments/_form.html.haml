@@ -1,25 +1,25 @@
 = form_for local_assigns.fetch(:appointment), html: {class: "form form-horizontal client" } do |form|
   .form-group
     .row
-      .col-lg-3.text-right
+      .col-lg-3.col-xs-3.col-md-4.text-right
         = form.label :client_name, "Имя", class: 'control-label'
-      .col-lg-6
+      .col-lg-6.col-xs-8.col-md-5
         = form.text_field :client_name, class: 'form-control', required: true
     .row
-      .col-lg-6.col-lg-offset-3
+      .col-lg-6.col-lg-offset-3.col-xs-8.col-xs-offset-3.col-md-5.col-md-offset-4
         = form.error_span(:client_name)
 
   .form-group
     .row
-      .col-lg-3.text-right
+      .col-lg-3.col-xs-3.col-md-4.text-right
         = form.label :client_phone, "Телефон", class: 'control-label'
-      .col-lg-6
+      .col-lg-6.col-xs-8.col-md-5
         = form.text_field :client_phone, class: 'form-control', required: true
     .row
-      .col-lg-6.col-lg-offset-3
+      .col-lg-6.col-lg-offset-3.col-xs-8.col-xs-offset-3.col-md-5.col-md-offset-4
         = form.error_span(:client_phone)
 
   .form-group
-    .col-lg-offset-3.col-lg-6
+    .col-lg-offset-3.col-lg-6.col-xs-8.col-xs-offset-3.col-md-5.col-md-offset-4
       = form.submit "Записаться", class: 'btn btn-primary'
       = link_to "Назад", root_path, class: 'btn btn-default'
