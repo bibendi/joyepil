@@ -1,3 +1,5 @@
 %p Поступила онлайн зайпись с сайта.
 %p Клиент: #{@appointment.client_name}
-%p Телефон: %a{href: "tel:#{@appointment.client_phone}"} #{@appointment.client_phone}
+%p
+  Телефон:
+  %a{href: "tel:#{@appointment.client_phone}"} #{@appointment.client_phone}
