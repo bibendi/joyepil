@@ -20,6 +20,7 @@ gem "therubyracer", platforms: :ruby
 gem "interactor"
 gem "phonelib"
 gem "rails-i18n"
+gem "actionpack-page_caching"
 
 group :development, :test do
   gem 'byebug', platform: :mri
